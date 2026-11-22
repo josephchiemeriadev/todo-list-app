@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>My Todo-List App</title>
+  </head>
+  <body>
+    <main>
+      <h3>My To-Do List</h3>
+
+      <div class="main">
+        <div class="input-box">
+          <input type="text" id="input" placeholder="enter task" />
+          <button id="btn">Add</button>
+        </div>
+
+        <div class="box">
+          <div class="all tax change">All</div>
+          <div class="active tax">Active</div>
+          <div class="complete tax">Completed</div>
+        </div>
+        <ul id="list"></ul>
+        <div class="image-text">
+          <img src="notaskimage.png" class="image" />
+          <h4>No tasks yet</h4>
+          <p>Add a task to get stated</p>
+        </div>
+
+        <div class="done-delete">
+          <div class="all-comp">
+            <p>tasks: <span class="all-task">3</span></p>
+            <p>completed: <span class="complete-task">1</span></p>
+          </div>
+
+          <div class="comp-delete">
+            <button id="delete-comp">
+              <i class="fa-solid fa-trash"></i> Clear Completed
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
